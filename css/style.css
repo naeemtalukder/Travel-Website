@@ -13,7 +13,7 @@
     --text-color: #221314;
     --second-color: #5a7184;
     --main-color: #6e54fa;
-    --big-color: 6rem;
+    --big-font: 6rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
 }
@@ -41,7 +41,7 @@ header{
     font-size: 34px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .navbar{
@@ -70,4 +70,47 @@ header{
     z-index: 10001;
     cursor: pointer;
     display: none;
+}
+
+section{
+    padding: 80px 18%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/b.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    line-height: 1.2;
+    color: var(--bg-color);
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.home-text p{
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.home-btn{
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 30px;
+    background: #ffffffbf;
+    color: var(--main-color);
+    border-radius: 4px;
+    transition: ease .40s;
+}
+.home-btn:hover{
+    background: var(--bg-color);
+    transform: scale(1.1);
 }
